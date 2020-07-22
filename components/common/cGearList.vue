@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto mt-4">
+  <section class="mx-auto mt-4" style="max-width: 65%;">
     <h2 class="text-center text-xl md:text-2xl font-bold">
       {{ name }}の使用デバイス一覧
     </h2>
@@ -7,7 +7,7 @@
       <li
         v-for="gear in gearList"
         :key="gear"
-        class="w-full lg:w-1/5 md:w-1/3 block m-3"
+        class="w-full lg:w-1/4 md:w-1/3 block m-4"
       >
         <c-gear :gear="gear" />
       </li>
