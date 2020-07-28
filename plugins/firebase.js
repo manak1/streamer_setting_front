@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
-if (!firebase.apps.length) {
+/* if (!firebase.apps.length) {
   firebase.initializeApp({
     apiKey: process.env.API_KEY,
     authDomain: process.env.AUTH_DOMAIN,
@@ -9,7 +9,13 @@ if (!firebase.apps.length) {
     storageBucket: process.env.STORAGE_BUCKET,
     messagingSenderId: process.env.MESSAGING_SENDERID,
   })
-  console.log(process.env.PROJECT_ID)
-}
+} */
 
-export default firebase
+export default firebase.initializeApp({
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDERID,
+})
