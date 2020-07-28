@@ -9,6 +9,7 @@ if (!firebase.apps.length) {
     storageBucket: process.env.STORAGE_BUCKET,
     messagingSenderId: process.env.MESSAGING_SENDERID,
   })
+  console.log(process.env.PROJECT_ID)
 }
 
 export default firebase
