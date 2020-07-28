@@ -7,6 +7,7 @@
       <c-card
         v-for="(streamer, index) in streamerList"
         :key="index"
+        :prefix="prefix"
         :name="streamer.name"
         :img="streamer.img"
         :text="streamer.biography"
@@ -22,6 +23,11 @@ export default {
     streamerList: {
       type: Array,
       required: true,
+    },
+    prefix: {
+      type: String,
+      required: true,
+      default: 'fortnite',
     },
   },
 }

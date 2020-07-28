@@ -2,11 +2,11 @@
   <section class="c-setting py-8">
     <div class="container px-4 mx-auto w-full">
       <h2 class="text-center text-2xl font-bold">{{ name }}の設定一覧</h2>
-      <table style="background-color: #fff;" class="shadow-lg mt-8 w-full">
+      <table style="background-color: #fff;" class="shadow-md mt-8 w-full">
         <tr
           v-for="(item, index) in sortedKeys"
           :key="index"
-          class="flex hover:bg-blue-300 transition"
+          class="flex hover:bg-gray-100 transition"
           style="border-bottom: thin solid rgba(0, 0, 0, 0.12);"
         >
           <th class="w-1/2 p-4 c-setting__output">

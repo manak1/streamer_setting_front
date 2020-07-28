@@ -1,7 +1,9 @@
 <template>
   <div class="w-full relative c-hero__bg h-32 md:h-64">
-    <div class="container mx-auto text-center py-24">
-      <h2 class="text-5xl relative text-white c-hero__text">{{ title }}</h2>
+    <div class="container mx-auto text-center py-24 relative h-full">
+      <h2 class="text-5xl relative text-white c-hero__text">
+        {{ title }}
+      </h2>
     </div>
   </div>
 </template>
@@ -39,6 +41,10 @@ export default {
 }
 
 .c-hero__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.16078);
 }
 </style>

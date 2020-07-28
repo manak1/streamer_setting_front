@@ -1,7 +1,9 @@
 <template>
-  <div class="container mx-auto pt-12 text-center">
+  <section class="container mx-auto pt-12 text-center">
     <form>
-      <h2 class="text-3xl text-center font-bold">配信者を探す</h2>
+      <h2 class="text-3xl text-center font-bold tracking-wider">
+        配信者を探す
+      </h2>
       <div class="flex justify-center items-center mt-8">
         <div class="inline-block">
           <p class="text-3xl">
@@ -10,14 +12,14 @@
         </div>
         <div class="text-center inline-block c-search__input ml-2 w-1/2 h-16">
           <input
-            class="border rounded-lg text-xl pl-12 pr-24 mx-auto py-3 w-full h-full"
+            class="border rounded-lg text-xl pl-12 pr-24 mx-auto py-3 w-full h-full outline-none shadow-sm"
             type="text"
             placeholder="配信者の名前"
           />
         </div>
       </div>
     </form>
-  </div>
+  </section>
 </template>
 
 <script>

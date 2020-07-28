@@ -1,7 +1,6 @@
 <template>
   <div
     class="c-card w-full rounded-lg bg-white relative p-4 text-center shadow-md hover:shadow-lg"
-    :class="rarityColor"
   >
     <a :href="gear.url">
       <h3 class="mt-2 font-bold text-xl">モニター</h3>

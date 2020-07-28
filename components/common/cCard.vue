@@ -1,7 +1,13 @@
 <template>
-  <div class="c-card relative p-4 text-center shadow-lg hover:shadow-xl">
-    <nuxt-link :to="`/fortnite/${name}`">
-      <img :src="img" class="rounded-full mx-auto h-24" alt="" />
+  <div
+    class="c-card w-full rounded-lg bg-white relative py-12 px-4 text-center shadow-md hover:shadow-lg"
+  >
+    <nuxt-link :to="`/${prefix}/${name}`">
+      <img
+        src="@/assets/images/common/profile/icon_notfound.svg"
+        class="rounded-full w-24 object-cover mx-auto h-24"
+        :alt="`${name}の写真`"
+      />
       <p class="mt-2 text-sm">{{ name }}</p>
       <p class="mt-2">{{ text }}</p>
     </nuxt-link>
@@ -23,6 +29,14 @@ export default {
       type: String,
       required: true,
     },
+    game: {
+      type: String,
+      required: true,
+    },
+    prefix: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {}
@@ -32,8 +46,6 @@ export default {
 
 <style lang="scss" scoped>
 .c-card {
-  width: 240px;
-  background-color: #f8f8f8;
   transition: ease-in 0.2s;
   top: 0;
   opacity: 1;

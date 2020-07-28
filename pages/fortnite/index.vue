@@ -2,7 +2,8 @@
   <div>
     <c-hero title="Fortnite 配信者" />
     <c-search :hit-number="streamerList.length" />
-    <c-streamers :streamer-list="streamerList" />
+    <c-latest prefix="fortnite" :streamer-list="streamerList" />
+    <c-streamers prefix="fortnite" :streamer-list="streamerList" />
     <h2 v-if="streamerList">{{ streamerList }}</h2>
     <button @click="fetchGear">test</button>
   </div>
@@ -12,12 +13,14 @@
 import firebase from 'firebase'
 import cStreamers from '@/pages/fortnite/-cStreamers'
 import cSearch from '@/pages/fortnite/-cSearch'
+import cLatest from '@/pages/fortnite/-cLatest'
 const LIMIT = 8
 
 export default {
   components: {
     cStreamers,
     cSearch,
+    cLatest,
   },
   async asyncData({ app }) {
     const snapShot = await firebase
