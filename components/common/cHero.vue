@@ -1,7 +1,7 @@
 <template>
   <div class="w-full relative c-hero__bg h-32 md:h-64">
-    <div class="container mx-auto text-center py-24 relative h-full">
-      <h2 class="text-5xl relative text-white c-hero__text">
+    <div class="container mx-auto text-center md:py-24 relative h-full">
+      <h2 class="text-2xl md:text-5xl relative text-white c-hero__text">
         {{ title }}
       </h2>
     </div>

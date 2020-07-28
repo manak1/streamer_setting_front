@@ -31,6 +31,7 @@ export default {
     snapShot.forEach((doc) => {
       streamer = doc.data()
     })
+
     return {
       streamer,
     }

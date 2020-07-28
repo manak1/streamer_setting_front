@@ -1,7 +1,16 @@
 <template>
-  <header class="w-full p-2 shadow-xl z-50 fixed bg-white">
+  <header class="w-full p-2 shadow-sm md:fixed bg-white" style="z-index: 999;">
     <div class="container mx-auto flex items-center justify-between">
-      <img src="https://via.placeholder.com/60" class="rounded-full" alt="#" />
+      <img
+        src="https://via.placeholder.com/60"
+        class="hidden md:blockrounded-full"
+        alt="#"
+      />
+      <img
+        src="https://via.placeholder.com/45"
+        class="rounded-full md:hidden"
+        alt="#"
+      />
       <div class="flex space-x-3 items-center">
         <ul class="space-x-6 hidden sm:flex">
           <li class="p-2">

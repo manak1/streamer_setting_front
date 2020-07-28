@@ -1,7 +1,7 @@
 <template>
   <section class="mt-12 lg:container-gear-lg mx-auto text-center">
     <ul v-if="streamerList" class="flex flex-wrap justify-center mt-3">
-      <span v-for="index in 10" :key="index">
+      <span v-for="test in 10" :key="test">
         <li v-for="(streamer, index) in streamerList" :key="index" class="m-3">
           <c-card
             :name="streamer.name"
