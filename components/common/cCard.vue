@@ -1,15 +1,15 @@
 <template>
   <div
-    class="c-card w-full rounded-lg bg-white relative py-12 px-4 text-center shadow-md hover:shadow-lg"
+    class="c-card w-full rounded-lg bg-white relative py-4 md:py-12 px-4 text-center shadow-md hover:shadow-lg"
   >
     <nuxt-link :to="`/${prefix}/${name}`">
       <img
         src="@/assets/images/common/profile/icon_notfound.svg"
-        class="rounded-full w-24 object-cover mx-auto h-24"
+        class="rounded-full object-cover mx-auto w-16 h-16 md:w-24 md:h-24"
         :alt="`${name}の写真`"
       />
       <p class="mt-2 text-sm">{{ name }}</p>
-      <p class="mt-2">{{ text }}</p>
+      <p class="mt-2 hidden md:block">{{ text }}</p>
     </nuxt-link>
   </div>
 </template>

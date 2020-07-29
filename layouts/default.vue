@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <l-header />
-    <div style="md:block padding-top: 76px;"></div>
+    <div style="padding-top: 76px;"></div>
     <Nuxt />
     <l-footer-box />
   </div>

@@ -1,13 +1,13 @@
 <template>
-  <section class="mx-auto lg:container-gear-lg">
+  <section class="mx-auto -mt-10 lg:container-gear-lg">
     <h2 class="text-center text-xl md:text-2xl font-bold">
       {{ name }}の使用デバイス一覧
     </h2>
-    <ul class="flex flex-wrap justify-center mt-8">
+    <ul class="flex flex-wrap justify-center mt-2 md:mt-8">
       <li
         v-for="gear in gearList"
         :key="gear"
-        class="w-full lg:w-1/4 md:w-1/3 block m-4"
+        class="w-full lg:w-1/4 md:w-1/3 block mx-4 my-2 md:m-4"
       >
         <c-gear :gear="gear" />
       </li>

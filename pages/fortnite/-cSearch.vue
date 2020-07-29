@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto pt-12 text-center">
+  <section class="container mx-auto pt-8 md:pt-12 text-center">
     <form>
       <h2 class="text-2xl md:text-3xl text-center font-bold tracking-wider">
         配信者を探す
@@ -11,10 +11,10 @@
           </p>
         </div>
         <div
-          class="text-center inline-block c-search__input ml-2 lg:w-1/2 h-16"
+          class="text-center inline-block c-search__input ml-2 w-4/5 lg:w-1/2 h-16"
         >
           <input
-            class="border rounded-lg text-xl pl-12 pr-24 mx-auto py-3 w-full h-full outline-none shadow-sm"
+            class="border rounded-lg text-base md:text-xl pl-12 pr-24 mx-auto py-3 w-full h-full outline-none shadow-sm"
             type="text"
             placeholder="配信者の名前"
           />

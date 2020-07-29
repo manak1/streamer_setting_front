@@ -3,7 +3,7 @@
     <div class="container mx-auto flex items-center justify-between">
       <img
         src="https://via.placeholder.com/60"
-        class="hidden md:blockrounded-full"
+        class="hidden md:block rounded-full"
         alt="#"
       />
       <img
