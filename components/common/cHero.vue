@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full relative c-hero__bg h-24 md:h-64">
+  <div class="w-full relative c-hero__bg h-24 md:h-64 lg:header-space">
     <div class="container mx-auto text-center md:py-24 relative h-full">
       <h2 class="text-xl md:text-5xl relative text-white c-hero__text">
         {{ title }}

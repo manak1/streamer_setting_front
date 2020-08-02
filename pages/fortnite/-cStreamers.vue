@@ -8,9 +8,9 @@
         v-for="(streamer, index) in streamerList"
         :key="index"
         :prefix="prefix"
-        :name="streamer.name"
-        :img="streamer.img"
-        :text="streamer.biography"
+        :name="streamer.profile.name"
+        :img="streamer.profile.icon"
+        :text="streamer.profile.biography"
         class="m-4"
       />
     </ul>

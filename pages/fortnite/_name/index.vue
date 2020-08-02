@@ -3,16 +3,13 @@
     <c-hero />
     <div>
       <div v-if="streamer" class="mx-auto">
-        <c-profile :streamer="streamer" />
-        <c-gear-list :name="streamer.name" :gear-list="gearList" />
+        <c-profile :streamer="streamer.profile" :name="streamer.profile.name" />
+        <c-gear-list :name="streamer.profile.name" :gear-list="gearList" />
         <c-setting
-          :name="streamer.name"
+          :name="streamer.profile.name"
           :sensitivity="streamer.sensitivity"
           :keys="streamer.keys"
         />
-        <div>
-          {{ streamer }}
-        </div>
       </div>
     </div>
   </section>
@@ -26,11 +23,13 @@ export default {
     const snapShot = await firebase
       .firestore()
       .collection('streamer')
-      .where('name', '==', params.name)
+      .where('profile.name', '==', params.name)
       .get()
     snapShot.forEach((doc) => {
       streamer = doc.data()
     })
+
+    console.log(streamer, params.name)
 
     return {
       streamer,

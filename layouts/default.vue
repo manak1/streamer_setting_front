@@ -1,9 +1,10 @@
 <template>
   <div class="overflow-hidden">
     <l-header />
-    <div style="padding-top: 76px;"></div>
+    <!-- <div style="padding-top: 76px;"></div> -->
     <Nuxt />
     <l-footer-box />
+    <div class="md:hidden" style="padding-bottom: 58px;" />
   </div>
 </template>
 

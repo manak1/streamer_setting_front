@@ -29,7 +29,7 @@ export default {
           icon: '/images/layout/footer/home-24px.svg',
         },
         {
-          path: '/streamers',
+          path: '/fortnite',
           text: '配信者一覧',
           icon: '/images/layout/footer/person-24px.svg',
         },

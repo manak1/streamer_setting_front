@@ -8,6 +8,10 @@
 
 @responsive {
 
+  .header-space {
+    margin-top:74px;
+  }
+
   .container-gear-lg {
     max-width:75%;
     min-width:980px;

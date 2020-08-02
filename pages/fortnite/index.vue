@@ -4,8 +4,6 @@
     <c-search :hit-number="streamerList.length" />
     <c-latest prefix="fortnite" :streamer-list="streamerList" />
     <c-streamers prefix="fortnite" :streamer-list="streamerList" />
-    <h2 v-if="streamerList">{{ streamerList }}</h2>
-    <button @click="fetchGear">test</button>
   </div>
 </template>
 

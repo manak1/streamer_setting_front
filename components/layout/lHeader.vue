@@ -1,5 +1,8 @@
 <template>
-  <header class="w-full p-2 shadow-sm md:fixed bg-white" style="z-index: 999;">
+  <header
+    class="l-header top-0 w-full p-2 shadow-sm md:fixed bg-white"
+    style="z-index: 999;"
+  >
     <div class="container mx-auto flex items-center justify-between">
       <img
         src="https://via.placeholder.com/60"
