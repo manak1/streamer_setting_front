@@ -1,8 +1,8 @@
 <template>
-  <section class="c-setting py-8">
+  <section class="c-setting pt-16 pb-8">
     <div class="container px-4 mx-auto lg:w-full">
       <h2 class="text-center text-xl md:text-2xl font-bold">
-        {{ name }}の感度設
+        {{ name }}の感度設定
       </h2>
       <table
         style="background-color: #fff;"
