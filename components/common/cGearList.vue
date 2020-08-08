@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto -mt-10 lg:container-gear-lg">
+  <section class="mx-auto -mt-10 lg:container">
     <h2 class="text-center text-xl md:text-2xl font-bold">
       {{ name }}の使用デバイス一覧
     </h2>
