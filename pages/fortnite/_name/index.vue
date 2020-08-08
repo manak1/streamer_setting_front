@@ -1,7 +1,7 @@
 <template>
   <section>
     <c-hero />
-    <div>
+    <div class="pb-32">
       <div v-if="streamer" class="mx-auto">
         <c-profile :profile="streamer.profile" />
         <c-gear-list :name="streamer.profile.name" :gear-list="gearList" />
@@ -10,6 +10,7 @@
           :name="streamer.profile.name"
         />
         <c-key-setting :name="streamer.profile.name" :keys="streamer.keys" />
+        <c-recommend prefix="fortnite" :streamer-list="recommend" />
       </div>
     </div>
   </section>
@@ -17,6 +18,7 @@
 
 <script>
 import firebase from 'firebase'
+import { mapGetters } from 'vuex'
 export default {
   async asyncData({ app, params }) {
     let streamer = {}
@@ -107,6 +109,9 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    ...mapGetters(['recommend']),
   },
 }
 </script>
