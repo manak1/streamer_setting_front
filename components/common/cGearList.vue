@@ -1,7 +1,7 @@
 <template>
   <section class="mx-auto -mt-10 lg:container">
     <h2 class="text-center text-xl md:text-2xl font-bold">
-      {{ name }}の使用デバイス一覧
+      {{ name }}の使用デバイス
     </h2>
     <ul class="flex flex-wrap justify-center mt-2 md:mt-8">
       <li

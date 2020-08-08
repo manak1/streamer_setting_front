@@ -2,7 +2,7 @@
   <section class="c-setting py-8">
     <div class="container px-4 mx-auto lg:w-full">
       <h2 class="text-center text-xl md:text-2xl font-bold">
-        {{ name }}のキー設定一覧
+        {{ name }}のキー設定
       </h2>
       <table
         style="background-color: #fff;"

@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto text-center pt-12">
     <h2 class="text-3xl font-bold">
-      人気ストリーマー 一覧
+      人気ストリーマー
     </h2>
     <ul v-if="streamerList" class="flex flex-wrap justify-center mt-3">
       <c-card
