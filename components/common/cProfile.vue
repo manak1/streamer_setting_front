@@ -1,38 +1,40 @@
 <template>
   <section
-    v-if="streamer"
+    v-if="profile"
     class="mx-auto text-center w-full lg:w-1/3 c-profile px-4 mt-5 sm:mt-0 sm:px-0"
     style="max-width: 400px;"
   >
     <div>
       <img
         v-if="iconExists"
-        :src="streamer.icon"
-        :alt="`${name}のアイコン`"
+        :src="profile.icon"
+        :alt="`${profile.name}のアイコン`"
         :class="iconClass"
       />
       <img
         v-else
         src="@/assets/images/common/profile/icon_notfound.svg"
-        :alt="`${name}のアイコン`"
+        :alt="`${profile.name}のアイコン`"
         :class="iconClass"
       />
     </div>
-    <h2 class="mt-2 text-2xl md:text-3xl font-bold">{{ streamer.name }}</h2>
+    <h2 class="mt-2 text-2xl md:text-3xl font-bold">
+      {{ profile.name }}
+    </h2>
     <div>
-      <p v-if="streamer.player" class="text-gray-600 font-medium">
-        {{ streamer.player }}
+      <p v-if="profile.player" class="text-gray-600 font-medium">
+        {{ profile.player }}
       </p>
       <p v-else class="text-gray-600 text-sm">プレイヤー</p>
     </div>
 
     <p class="mt-3">
-      {{ streamer.biography }}
+      {{ profile.biography }}
     </p>
 
     <div class="mt-2 flex justify-center space-x-3 items-center">
       <a
-        v-for="(sns, index) in streamer.sns"
+        v-for="(sns, index) in profile.sns"
         :key="index"
         class="h-6 w-6 inline-block"
         :href="sns.url"
@@ -52,14 +54,14 @@
 <script>
 export default {
   props: {
-    streamer: {
+    profile: {
       type: Object,
       required: true,
     },
   },
   computed: {
     iconExists() {
-      return this.streamer?.icon
+      return this.profile?.icon
     },
     /* 独自tailwind クラスを追加して実装した方が良さそう */
     iconClass() {

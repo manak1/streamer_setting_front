@@ -3,13 +3,13 @@
     <c-hero />
     <div>
       <div v-if="streamer" class="mx-auto">
-        <c-profile :streamer="streamer.profile" :name="streamer.profile.name" />
+        <c-profile :profile="streamer.profile" />
         <c-gear-list :name="streamer.profile.name" :gear-list="gearList" />
-        <c-setting
-          :name="streamer.profile.name"
+        <c-sensitivity
           :sensitivity="streamer.sensitivity"
-          :keys="streamer.keys"
+          :name="streamer.profile.name"
         />
+        <c-key-setting :name="streamer.profile.name" :keys="streamer.keys" />
       </div>
     </div>
   </section>
@@ -28,9 +28,6 @@ export default {
     snapShot.forEach((doc) => {
       streamer = doc.data()
     })
-
-    console.log(streamer, params.name)
-
     return {
       streamer,
     }
