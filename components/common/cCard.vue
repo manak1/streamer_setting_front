@@ -2,6 +2,7 @@
   <div
     v-if="profile"
     class="c-card w-full rounded-lg bg-white relative py-4 md:py-12 px-4 text-center shadow-md hover:shadow-lg"
+    style="max-height: 277px;"
   >
     <nuxt-link :to="`/${prefix}/${profile.name}`">
       <img
@@ -39,6 +40,7 @@ export default {
   },
   computed: {
     cropText() {
+      console.log(this.profile.biography)
       if (this.profile.biography.length >= 34) {
         return `${this.profile.biography.substr(0, 31)}...`
       } else {
