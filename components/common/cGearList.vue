@@ -9,9 +9,12 @@
         :key="gear"
         class="w-full lg:w-1/4 md:w-1/3 block mx-4 my-2 md:m-4"
       >
-        <c-gear :gear="gear" />
+        <c-gear :gear="gear" url="/gear" />
       </li>
     </ul>
+    <div class="text-center mt-12">
+      <c-button text="人気デバイス一覧へ" link="/gears" />
+    </div>
   </section>
 </template>
 
