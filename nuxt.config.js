@@ -9,13 +9,13 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: 'static',
+  target: 'server',
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'StreamerSettings | 配信者の使用設定、デバイスを知ろう' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -69,5 +69,14 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extend(config, { isServer }) {
+      if (isServer) {
+        config.externals = {
+          '@firebase/app': 'commonjs @firebase/app',
+          '@firebase/firestore': 'commonjs @firebase/firestore',
+        }
+      }
+    },
+  },
 }
