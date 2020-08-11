@@ -28,7 +28,12 @@ export const actions = {
       .limit(5)
       .get()
     snapShot.forEach((doc) => {
-      recommendList.push({ ...doc.data(), id: doc.id })
+      recommendList.push({
+        ...doc.data(),
+        id: doc.id,
+        createdAt: doc.data().createdAt.toDate(),
+        editedAt: doc.data().editedAt.toDate(),
+      })
     })
     commit('setRecommend', recommendList)
   },

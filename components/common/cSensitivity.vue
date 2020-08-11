@@ -33,7 +33,7 @@
 export default {
   props: {
     sensitivity: {
-      type: Object,
+      type: Array,
       required: true,
     },
     name: {

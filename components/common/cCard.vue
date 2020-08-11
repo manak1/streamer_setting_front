@@ -40,7 +40,6 @@ export default {
   },
   computed: {
     cropText() {
-      console.log(this.profile.biography)
       if (this.profile.biography.length >= 34) {
         return `${this.profile.biography.substr(0, 31)}...`
       } else {

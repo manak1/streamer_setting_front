@@ -5,8 +5,8 @@
     </h2>
     <ul class="flex flex-wrap justify-center mt-2 md:mt-8">
       <li
-        v-for="gear in gearList"
-        :key="gear"
+        v-for="(gear, index) in gearList"
+        :key="index"
         class="w-full lg:w-1/4 md:w-1/3 block mx-4 my-2 md:m-4"
       >
         <c-gear :gear="gear" url="/gear" />

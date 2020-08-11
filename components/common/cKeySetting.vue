@@ -33,7 +33,7 @@
 export default {
   props: {
     keys: {
-      type: Object,
+      type: Array,
       required: true,
     },
     name: {
@@ -43,34 +43,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-/* .c-setting {
-  &__output {
-    color: #99dcff;
-    background-color: #2c54b1;
-    border: 4px solid #0147a8;
-    border-right: 0;
-    border-bottom: 2px solid #0147a8;
-  }
-
-  &__input {
-    color: #94d7ff;
-    background-color: rgb(0, 68, 203);
-    border: 4px solid #005de4;
-    border-bottom: 1px solid #0147a8;
-  }
-} */
-
-/* table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-table th,
-table td {
-  padding: 10px 0;
-  text-align: center;
-} */
-</style>
