@@ -7,20 +7,18 @@
 
 
 @responsive {
-
   .header-space {
     margin-top:74px;
   }
-
-  .container-gear-lg {
-    max-width:75%;
+  .container-lg {
+    width:75%;
     min-width:980px;
   } 
 
 }
 
 
-html body .container {
+.container {
   width: 960px;
   max-width: 100%;
   margin: 0 auto;
