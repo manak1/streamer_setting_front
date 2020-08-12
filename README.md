@@ -3,7 +3,7 @@
 配信者の使用しているデバイス、設定を確認する事のできるサイト。
 
 ## 動作環境
-https://streamergears.com
+https://streamersetting.com
 
 ## 絵文字コミットルール
 
