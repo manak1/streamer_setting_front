@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed bottom-0 w-full px-3 md:hidden bg-white shadow-sm z-50"
+    class="fixed bottom-0 w-full overflow-hidden px-3 md:hidden bg-white shadow-sm z-50"
     style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); color: #555;"
   >
     <ul class="flex justify-between text-xs text-center">

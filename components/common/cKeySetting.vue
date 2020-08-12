@@ -1,6 +1,6 @@
 <template>
   <section class="c-setting py-8">
-    <div class="container px-4 mx-auto lg:w-full">
+    <div class="container px-4 mx-auto">
       <h2 class="text-center text-xl md:text-2xl font-bold">
         {{ name }}のキー設定
       </h2>

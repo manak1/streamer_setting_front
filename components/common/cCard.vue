@@ -1,24 +1,32 @@
 <template>
   <div
     v-if="profile"
-    class="c-card w-full rounded-lg bg-white relative py-4 md:py-12 px-4 text-center shadow-md hover:shadow-lg"
-    style="max-height: 277px;"
+    class="c-card w-full rounded-lg bg-white relative py-4 md:py-8 px-4 text-center shadow-sm md:shadow-md hover:shadow-lg"
   >
-    <nuxt-link :to="`/${prefix}/${profile.name}`">
-      <img
-        v-if="true"
-        :src="profile.icon"
-        class="rounded-full object-cover mx-auto w-16 h-16 md:w-24 md:h-24"
-        :alt="`${profile.name}の写真`"
-      />
-      <img
-        v-else
-        src="@/assets/images/common/profile/icon_notfound.svg"
-        :alt="`${profile.name}のアイコン`"
-        class="rounded-full object-cover mx-auto w-16 h-16 md:w-24 md:h-24"
-      />
-      <p class="mt-2 text-sm">{{ profile.name }}</p>
-      <p class="mt-2 hidden md:block">{{ cropText }}</p>
+    <nuxt-link
+      :to="`/${prefix}/${profile.name}`"
+      class="flex items-center space-x-3 md:block md:space-x-0"
+    >
+      <div class="w-1/3 md:w-full">
+        <img
+          v-if="true"
+          :src="profile.icon"
+          class="rounded-full object-cover mx-auto w-16 h-16 md:w-24 md:h-24"
+          :alt="`${profile.name}の写真`"
+        />
+        <img
+          v-else
+          src="@/assets/images/common/profile/icon_notfound.svg"
+          :alt="`${profile.name}のアイコン`"
+          class="rounded-full object-cover mx-auto w-16 h-16 md:w-24 md:h-24"
+        />
+        <p class="mt-2 font-bold">{{ profile.name }}</p>
+      </div>
+      <div class="w-2/3 md:w-full">
+        <p class="mt-2 text-left text-sm md:text-center md:block">
+          {{ cropText }}
+        </p>
+      </div>
     </nuxt-link>
   </div>
 </template>

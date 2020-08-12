@@ -1,6 +1,6 @@
 <template>
-  <section class="c-setting pt-16 pb-8">
-    <div class="container px-4 mx-auto lg:w-full">
+  <section class="pt-16 pb-8">
+    <div class="container px-4 mx-auto">
       <h2 class="text-center text-xl md:text-2xl font-bold">
         {{ name }}の感度設定
       </h2>

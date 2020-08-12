@@ -3,14 +3,14 @@
     class="l-header top-0 w-full p-2 shadow-sm md:fixed bg-white"
     style="z-index: 999;"
   >
-    <div class="container mx-auto flex items-center justify-between">
+    <div class="container mx-auto px-2 flex items-center justify-between">
       <img
         src="https://via.placeholder.com/60"
         class="hidden md:block rounded-full"
         alt="#"
       />
       <img
-        src="https://via.placeholder.com/45"
+        src="https://via.placeholder.com/35"
         class="rounded-full md:hidden"
         alt="#"
       />
@@ -28,7 +28,12 @@
           </li>
           <li class="p-2">
             <nuxt-link to="/gear">
-              ギア一覧
+              デバイス一覧
+            </nuxt-link>
+          </li>
+          <li class="p-2">
+            <nuxt-link to="/gear">
+              ゲーム一覧
             </nuxt-link>
           </li>
         </ul>
