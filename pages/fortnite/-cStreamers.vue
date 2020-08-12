@@ -1,17 +1,36 @@
 <template>
-  <section class="container mx-auto text-center pt-12">
+  <section class="container md:container-lg mx-auto text-center py-12">
     <h2 class="text-3xl font-bold">
-      人気ストリーマー
+      配信者一覧
     </h2>
-    <ul v-if="streamerList" class="flex flex-wrap justify-center mt-3">
-      <c-card
+    <ul v-if="streamerList" class="flex flex-wrap justify-center mt-6">
+      <li
         v-for="(streamer, index) in streamerList"
         :key="index"
-        :prefix="prefix"
-        :profile="streamer.profile"
-        class="m-4"
-      />
+        class="w-full md:w-1/6 m-2"
+        style="max-width: 260px;"
+      >
+        <c-card :prefix="prefix" :profile="streamer.profile" />
+      </li>
     </ul>
+    <div class="mx-auto text-center mt-6">
+      <ul class="flex justify-center space-x-2">
+        <li
+          class="mx-1 px-3 py-2 bg-white shadow-sm text-gray-500 hover:bg-gray-700 hover:text-gray-200 rounded-lg"
+        >
+          <a class="flex items-center font-bold" href="#">
+            <span class="mx-1">前へ</span>
+          </a>
+        </li>
+        <li
+          class="mx-1 px-3 py-2 bg-white shadow-sm text-gray-700 hover:bg-gray-700 hover:text-gray-200 rounded-lg"
+        >
+          <a class="flex items-center font-bold" href="#">
+            <span class="mx-1">次へ</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
