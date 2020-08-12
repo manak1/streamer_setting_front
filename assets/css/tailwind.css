@@ -24,7 +24,7 @@
   margin: 0 auto;
 }
 
-#__nuxt {
-  min-width: 100vw;
-  min-height: 100vh;
+html {
+  overflow-x:hidden;
+  overflow-y:scroll;
 }
