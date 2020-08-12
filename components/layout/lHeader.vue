@@ -1,7 +1,7 @@
 <template>
   <header
     class="l-header top-0 w-full p-2 shadow-sm md:fixed bg-white"
-    style="z-index: 999;"
+    style="z-index: 1000;"
   >
     <div class="container mx-auto px-2 flex items-center justify-between">
       <img
