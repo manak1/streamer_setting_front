@@ -1,24 +1,27 @@
 <template>
   <div>
     <c-hero title="Fortnite 配信者" />
-    <c-search :hit-number="streamerList.length" />
-    <c-latest prefix="fortnite" :streamer-list="streamerList" />
-    <c-streamers prefix="fortnite" :streamer-list="streamerList" />
+    <!--  <c-search :hit-number="streamerList.length" /> -->
+    <c-search-result prefix="fortnite" :streamer-list="streamerList" />
+    <c-streamers
+      v-if="streamerMock"
+      prefix="fortnite"
+      :streamer-list="streamerMock"
+    />
   </div>
 </template>
 
 <script>
 import firebase from 'firebase'
 import cStreamers from '@/pages/fortnite/-cStreamers'
-import cSearch from '@/pages/fortnite/-cSearch'
-import cLatest from '@/pages/fortnite/-cLatest'
+/* import cSearch from '@/pages/fortnite/-cSearch' */
+import { streamerMock } from '@/mock/streamers.json'
 const LIMIT = 8
 
 export default {
   components: {
     cStreamers,
-    cSearch,
-    cLatest,
+    /*    cSearch, */
   },
   async asyncData({ app }) {
     const snapShot = await firebase
@@ -37,6 +40,7 @@ export default {
     return {
       streamerList: [],
       limit: 8,
+      streamerMock,
     }
   },
 
