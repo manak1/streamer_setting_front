@@ -1,5 +1,7 @@
 <template>
-  <section class="container md:container-lg mx-auto text-center py-12">
+  <section
+    class="container md:container-md lg:container-lg mx-auto text-center py-12"
+  >
     <h2 class="text-3xl font-bold">
       配信者一覧
     </h2>
@@ -7,7 +9,7 @@
       <li
         v-for="(streamer, index) in streamerList"
         :key="index"
-        class="w-full md:w-1/4 lg:w-1/5 my-2 md:m-2 card-max"
+        class="w-full w-half card-max m-1 md:m-2 md:card-max"
       >
         <c-card :prefix="prefix" :profile="streamer.profile" />
       </li>

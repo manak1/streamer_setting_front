@@ -3,11 +3,14 @@
     <h2 class="text-center text-xl md:text-2xl font-bold">
       おすすめの配信者
     </h2>
-    <ul v-if="streamerList" class="flex flex-wrap justify-center mt-6">
+    <ul
+      v-if="streamerList"
+      class="flex flex-wrap w-full justify-center mt-6 space-x-2"
+    >
       <li
         v-for="(streamer, index) in streamerList"
         :key="index"
-        class="m-2 lg:m-3 w-1/2 card-max"
+        class="lg:m-3 w-1/2 card-max"
       >
         <c-card :profile="streamer.profile" :prefix="prefix" />
       </li>

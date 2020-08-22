@@ -3,11 +3,8 @@
     v-if="profile"
     class="c-card w-full card-max rounded-lg bg-white relative py-4 md:py-8 px-4 text-center shadow-sm md:shadow-md hover:shadow-lg"
   >
-    <nuxt-link
-      :to="`/${prefix}/${profile.name}`"
-      class="flex items-center space-x-3 md:block md:space-x-0"
-    >
-      <div class="w-1/3 md:w-full">
+    <nuxt-link :to="`/${prefix}/${profile.name}`" class="items-center md:block">
+      <div class="md:w-full">
         <img
           v-if="true"
           :src="profile.icon"
@@ -22,7 +19,7 @@
         />
         <p class="mt-2 font-bold">{{ profile.name }}</p>
       </div>
-      <div class="w-2/3 md:w-full">
+      <div class="md:w-full">
         <p class="mt-2 text-left text-sm md:text-center md:block">
           {{ cropText }}
         </p>

@@ -1,7 +1,7 @@
 <template>
   <section
     v-if="streamerList"
-    class="mt-6 md:mt-12 container-lg px-5 mx-auto text-center"
+    class="mt-6 md:mt-12 md:container-md lg:container-lg px-5 mx-auto text-center"
   >
     <ul v-if="streamerList" class="flex flex-wrap justify-center mt-3">
       <li

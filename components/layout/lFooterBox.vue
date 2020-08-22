@@ -34,8 +34,8 @@ export default {
           icon: '/images/layout/footer/person-24px.svg',
         },
         {
-          path: '/gears',
-          text: 'ギア一覧',
+          path: '/devices',
+          text: 'デバイス一覧',
           icon: '/images/layout/footer/settings-24px.svg',
         },
         {

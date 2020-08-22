@@ -13,10 +13,19 @@
   .container-lg {
     width:75%;
     min-width:980px;
-  } 
+  }
+  
+  .container-md {
+    width:100%;
+  }
+  
   .card-max {
     max-width: 240px;
     max-height:240px
+  }
+
+  .w-half {
+    width:46%;
   }
 }
 
