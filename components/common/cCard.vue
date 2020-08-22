@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="profile"
-    class="c-card w-full rounded-lg bg-white relative py-4 md:py-8 px-4 text-center shadow-sm md:shadow-md hover:shadow-lg"
+    class="c-card w-full card-max rounded-lg bg-white relative py-4 md:py-8 px-4 text-center shadow-sm md:shadow-md hover:shadow-lg"
   >
     <nuxt-link
       :to="`/${prefix}/${profile.name}`"
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-card {
+/* .c-card {
   transition: ease-in 0.2s;
   top: 0;
   opacity: 1;
@@ -68,5 +68,5 @@ export default {
     transition: ease-in-out 0.2s;
     opacity: 0.8;
   }
-}
+} */
 </style>

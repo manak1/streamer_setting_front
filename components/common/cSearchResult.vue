@@ -7,8 +7,7 @@
       <li
         v-for="(streamer, index) in streamerList"
         :key="index"
-        class="m-2 md:m-3 w-full lg:w-1/2"
-        style="max-width: 260px; max-height: 240px;"
+        class="m-2 md:m-3 w-full card-max lg:w-1/2"
       >
         <c-card :profile="streamer.profile" :prefix="prefix" />
       </li>

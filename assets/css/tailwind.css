@@ -14,7 +14,10 @@
     width:75%;
     min-width:980px;
   } 
-
+  .card-max {
+    max-width: 240px;
+    max-height:240px
+  }
 }
 
 
